@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Time Traveler - World Market Price</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="CSS/2styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            
+            <a class="logos" href="index.html"><img src="IMG/logos.png" style="width: 50px; position:absolute; left:20px;"></a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search Watch's reference number" aria-label="Search for..." aria-describedby="btnNavbarSearch" style="width:300px"/>
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <br>
+                            
+                            <div class="sb-sidenav-menu-heading">Lay-Out</div>
+                            <a class="nav-link" href="#myAreaChart">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link" href="#datatablesSimple">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer" style="text-align: center;">   
+                        Time Traveler
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        
+                        
+                        <div style="text-align:center">
+                            <img src="IMG/world.svg" style="width: 100%">
+                        </div>
+                        
+                        <h1 class="mt-4"><b>World Market Price</b></h1>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        World Market Price of this Year - 126610LV
+                                    </div>
+                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                World Market Price of this Month
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple" style="text-align:center">
+                                    <thead>
+                                        <tr>
+                                            <th>Brand Name</th>
+                                            <th>Line</th>
+                                            <th>Reference Number</th>                                           
+                                            <th>Retail Price</th>
+                                            <th>Resale Price</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tfoot>
+                                        <tr>
+                                            <th>Brand Name</th>
+                                            <th>Line</th>
+                                            <th>Reference Number</th>
+                                            <th>Retail Price</th>
+                                            <th>Resale Price</th>
+                                        </tr>
+                                    </tfoot>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>AirKing</td>
+                                            <td>116900</td>
+                                            <td>$7150</td>
+                                            <td>$12500</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DateJust</td>
+                                            <td>126234</td>
+                                            <td>$8750</td>
+                                            <td>$14000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DateJust</td>
+                                            <td>126334</td>
+                                            <td>$10250</td>
+                                            <td>$17500</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayDate</td>
+                                            <td>128238</td>
+                                            <td>$33950</td>
+                                            <td>$55000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayDate</td>
+                                            <td>128235</td>
+                                            <td>$36850</td>
+                                            <td>$55000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayDate</td>
+                                            <td>128239</td>
+                                            <td>$36850</td>
+                                            <td>$45000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayDate</td>
+                                            <td>228238</td>
+                                            <td>$37450</td>
+                                            <td>$58000</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayDate</td>
+                                            <td>228235</td>
+                                            <td>$40350</td>
+                                            <td>$90000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayDate</td>
+                                            <td>228239</td>
+                                            <td>$40350</td>
+                                            <td>$70000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayDate</td>
+                                            <td>228206</td>
+                                            <td>$63250</td>
+                                            <td>$150000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayTona</td>
+                                            <td>116500</td>
+                                            <td>$14550</td>
+                                            <td>$50000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayTona</td>
+                                            <td>116503</td>
+                                            <td>$17950</td>
+                                            <td>$32000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayTona</td>
+                                            <td>116508</td>
+                                            <td>$37550</td>
+                                            <td>$120000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayTona</td>
+                                            <td>116505</td>
+                                            <td>$40450</td>
+                                            <td>$85000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayTona</td>
+                                            <td>116509</td>
+                                            <td>$40450</td>
+                                            <td>$68000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>DayTona</td>
+                                            <td>116506</td>
+                                            <td>$75650</td>
+                                            <td>$200000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Explorer</td>
+                                            <td>124270</td>
+                                            <td>$9500</td>
+                                            <td>$11000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Explorer</td>
+                                            <td>124273</td>
+                                            <td>$11500</td>
+                                            <td>$14000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Explorer</td>
+                                            <td>226570</td>
+                                            <td>$9500</td>
+                                            <td>$14500</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>GMTMasterII</td>
+                                            <td>126710BLNR</td>
+                                            <td>$10750</td>
+                                            <td>$24000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>GMTMasterII</td>
+                                            <td>126710BLRO</td>
+                                            <td>$10750</td>
+                                            <td>$29000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>GMTMasterII</td>
+                                            <td>126711CHNR</td>
+                                            <td>$15250</td>
+                                            <td>$28000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>GMTMasterII</td>
+                                            <td>126715CHNR</td>
+                                            <td>$39350</td>
+                                            <td>$65000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>GMTMasterII</td>
+                                            <td>126719BLRO</td>
+                                            <td>$41600</td>
+                                            <td>$110000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Milgauss</td>
+                                            <td>116400GV</td>
+                                            <td>$9150</td>
+                                            <td>$15500</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>OysterPerpetual</td>
+                                            <td>276200</td>
+                                            <td>$5300</td>
+                                            <td>$7200</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>OysterPerpetual</td>
+                                            <td>277200</td>
+                                            <td>$5400</td>
+                                            <td>$15000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>OysterPerpetual</td>
+                                            <td>126000</td>
+                                            <td>$5800</td>
+                                            <td>$19000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>OysterPerpetual</td>
+                                            <td>124300</td>
+                                            <td>$6150</td>
+                                            <td>$40000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Submariner</td>
+                                            <td>124060</td>
+                                            <td>$8950</td>
+                                            <td>$17000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Submariner</td>
+                                            <td>126610LN</td>
+                                            <td>$10100</td>
+                                            <td>$18000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Submariner</td>
+                                            <td>126610LV</td>
+                                            <td>$10600</td>
+                                            <td>$24000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Submariner</td>
+                                            <td>126613LN</td>
+                                            <td>$14700</td>
+                                            <td>$25000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Submariner</td>
+                                            <td>126613LB</td>
+                                            <td>$14700</td>
+                                            <td>$25000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Submariner</td>
+                                            <td>126618LN</td>
+                                            <td>$37950</td>
+                                            <td>$55000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Submariner</td>
+                                            <td>126618LB</td>
+                                            <td>$37950</td>
+                                            <td>$57000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Rolex</td>
+                                            <td>Submariner</td>
+                                            <td>126619LB</td>
+                                            <td>$40650</td>
+                                            <td>$50000</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="py-4 bg-light mt-auto" >
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Watch Traveler 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="JS/2scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="JS/chart-area-demo.js"></script>
+        <script src="JS/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="JS/datatables-simple-demo.js"></script>
+    </body>
+</html>
